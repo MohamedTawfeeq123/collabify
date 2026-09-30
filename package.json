@@ -1,0 +1,27 @@
+{
+  "name": "collabify",
+  "version": "1.0.0",
+  "description": "Collabify – Real-Time Team Collaboration & Project Management Platform",
+  "scripts": {
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "build:client": "npm --prefix client run build",
+    "start": "npm --prefix server start"
+  },
+  "keywords": [
+    "collaboration",
+    "project-management",
+    "kanban",
+    "socket.io",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "Collabify Team",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
